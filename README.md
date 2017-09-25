@@ -28,6 +28,7 @@ image.png,null,http://www.google.com
 ```
 
 >下載解密金鑰
+
 Service : GET /stb/key/download?id=[key_id]  
 Request Parameter :  
 id : 取回 playlist 中的 keyname 欄位置, 目前設定為 UUID 格式  
