@@ -26,6 +26,18 @@ song1.scm,[md5],[url]
 song2.scm,[md5],[url]
 ```
 
+>下載 playlist.m3u
+Service : GET /stb/playlist/m3u?id=[playlist_id]
+Request Parameters : id : playlist id, 若無此參數則會傳回系統預設的 playlist
+Response (File): 
+```sh
+#EXTM3U
+#EXTINF:1, artist - title
+file:///media/mmcblk0p1/emmcMusic/image.scm
+#EXTINF:2, artist - title
+file:///media/mmcblk0p1/emmcMusic/book.scm
+```
+
 >下載解密金鑰
 
 Service : GET /stb/key/download?id=[key_id]  
