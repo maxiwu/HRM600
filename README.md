@@ -88,4 +88,23 @@ Response (File): playlist.m3u
 file:///media/mmcblk0p1/emmcMusic/facebook.png
 ```
 
+>STB啟用
 
+Service : POST /installer/new
+Req Body:
+```sh
+{
+    "store_identity": "STARBUCKS_002",
+    "mac":"abcdefabcdef001" 
+}
+```
+Response Payload
+```sh
+{
+    "access_token": "c6e69f26a14b4e65a3f19771f8b4ec196b82c604d0ac4d7f887602e5db3bf00aff22d5041dcf4807852cd4be4ce1f804eb5fc3689f6b40efb824dd365596293b3af34c5309f0431a8154852ce0204adb72262e1ad7b849bda023c8a1d65947a5",
+    "refresh_token": "47b08c02fa0345ada460f5bbfdf917d7878f76fc0a5544e685d984a1010e4d3dc0115f46d8fb4aa3847e5da280c1628cd1785b0a13c74df1aa6b49dccffa16521575045b23514b99b9dc09d10bb54b5c507b886df68a47a594db87d71d59ce7b",
+    "scope": "stb",
+    "id": 42,
+    "expires_in": -1
+}
+```
